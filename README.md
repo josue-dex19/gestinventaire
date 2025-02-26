@@ -1,16 +1,60 @@
-# gestinventaire
+GestInventaire
 
-A new Flutter project.
+📌 Description
+GestInventaire est une application Flutter permettant de gérer un inventaire de produits. L'utilisateur peut ajouter, modifier et supprimer des produits avec des informations comme le nom, la description, le prix et la quantité.
 
-## Getting Started
+🚀 Fonctionnalités
+- 📥 Ajout de produits avec des détails (nom, description, prix, quantité).
+- 📋 Affichage de la liste des produits.
+- ✏️ Modification des produits.
+- 🗑️ Suppression des produits.
+- 📦 Gestion d'état avec Provider.
 
-This project is a starting point for a Flutter application.
+🛠️ Technologies utilisées
+- Flutter (SDK)
+- Dart (Langage de programmation)
+- Provider (Gestion d'état)
+- Accordion (UI Widget pour affichage)
 
-A few resources to get you started if this is your first Flutter project:
+📂 Structure du projet
+GestInventaire/
+│── lib/
+│   ├── main.dart                # Point d'entrée de l'application
+│   ├── models/
+│   │   ├── product.dart          # Modèle de données pour les produits
+│   ├── viewmodels/
+│   │   ├── product_view_models.dart  # Gestion de l'état avec Provider
+│   ├── views/
+│   │   ├── home_screen.dart      # Interface principale de l'application
+│── test/
+│   ├── product_view_model_test.dart  # Tests unitaires
+│── pubspec.yaml                  # Dépendances du projet
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📦 Installation et exécution
+1️⃣ Prérequis
+- Flutter SDK installé ([Installation Flutter](https://flutter.dev/docs/get-started/install))
+- Un émulateur ou un appareil physique connecté
+
+2️⃣ Cloner le projet
+```
+git clone https://github.com/votre-utilisateur/GestInventaire.git
+cd GestInventaire
+```
+
+3️⃣ Installer les dépendances
+```
+flutter pub get
+```
+
+4️⃣ Lancer l'application
+```
+flutter run
+```
+🧪 Tests unitaires
+L'application inclut des tests unitaires pour le ViewModel des produits.
+Pour exécuter les tests, utilisez :
+```
+flutter test
+```
+
